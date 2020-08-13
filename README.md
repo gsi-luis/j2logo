@@ -6,51 +6,45 @@
 * Url: https://j2logo.com/ejercicios/ejercicio-13-acumulado/
 
 ## Description:
-Implementa una función acumulado(lista), a la que se le pase como argumento una lista de
-números enteros y devuelva una lista de la suma acumulada.
+Implementa una función siguiente_mayor(lista), a la que se le pase como argumento una lista de números enteros 
+y reemplace cada número por el siguiente más grande de la lista.
 
 ## Considerations:
-* Si se pasa como argumento una lista vacía ([]), la función devolverá una lista vacía.
-* Imagina la siguiente lista [1, 2, 3, 4]. La función acumulado([1, 2, 3, 4]) devolverá [1, 3, 6, 10].
-* Como ves, cada elemento de la lista devuelta es [1, 1 + 2, 1 + 2 + 3, 1 + 2 + 3 + 4].
+* La función debe devolver una nueva lista con el resultado.
+* Los elementos en la lista serán únicos.
+* El elemento mayor se sustituye por el número -1.
 
 ## Examples output:
 ````
->>> acumulado([1, 5, 7])
-[1, 6, 13]
+>>> siguiente_mayor([5, 7, 3, 2, 8])
+[7, 8, 5, 3, -1]
 ````
 ````
->>> acumulado([1, 0, 1, 0, 1])
-[1, 1, 2, 2, 3]
+>>> siguiente_mayor([2, 3, 4, 5])
+[3, 4, 5, -1]
 ````
 ````
->>> acumulado([])
-[]
+>>> siguiente_mayor([1, 0, -1, 8, -72])
+[8, 1, 0, -1, -1]
 ````
 
 ## Command execute
-### Solution #1:
 ````
-python3 exercise13.py
+python exercise14.py
 ````
-### Solution #2:
-````
-python3 exercise13a.py
-````
-
 ## Command output
 ````
-Execute: acumulado([1, 5, 7])
-[1, 6, 13]
+Execute: acumulado([5, 7, 3, 2, 8])
+[7, 8, 5, 3, -1]
 Right answer: True
 ````
 ````
-Execute: acumulado([1, 0, 1, 0, 1])
-[1, 1, 2, 2, 3]
+Execute: acumulado([2, 3, 4, 5])
+[3, 4, 5, -1]
 Right answer: True
 ````
 ````
-Execute: acumulado([])
-[]
+Execute: acumulado([1, 0, -1, 8, -72])
+[8, 1, 0, -1, -1]
 Right answer: True
 ````
