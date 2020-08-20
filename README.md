@@ -3,48 +3,54 @@
 ## General data
 * Author: Jorge Luis Piña González
 * Email: jpinagonzalez@gmail.com
-* Url: https://j2logo.com/ejercicios/ejercicio-13-acumulado/
+* Url: https://j2logo.com/ejercicios/ejercicio-15-el-final-comun-mas-largo/
 
 ## Description:
-Implementa una función siguiente_mayor(lista), a la que se le pase como argumento una lista de números enteros 
-y reemplace cada número por el siguiente más grande de la lista.
+Implementa una función final_comun_mayor(str1, str2), a la que se le pase como argumento dos cadenas de caracteres y devuelva el final común a ambas más largo.
 
 ## Considerations:
-* La función debe devolver una nueva lista con el resultado.
-* Los elementos en la lista serán únicos.
-* El elemento mayor se sustituye por el número -1.
+* Si no existe un final común, la función debe devolver una cadena vacía.
 
 ## Examples output:
 ````
->>> siguiente_mayor([5, 7, 3, 2, 8])
-[7, 8, 5, 3, -1]
+>>> final_comun_mayor('camión', 'ración')
+'ión'
 ````
 ````
->>> siguiente_mayor([2, 3, 4, 5])
-[3, 4, 5, -1]
+>>> final_comun_mayor('Python', 'PyCon')
+'on'
 ````
 ````
->>> siguiente_mayor([1, 0, -1, 8, -72])
-[8, 1, 0, -1, -1]
+>>> final_comun_mayor('Teclado', 'Mezclado')
+'clado'
+````
+````
+>>> final_comun_mayor('Harina', 'Arroz')
+''
 ````
 
 ## Command execute
 ````
-python exercise14.py
+python exercise15.py
 ````
 ## Command output
 ````
-Execute: acumulado([5, 7, 3, 2, 8])
-[7, 8, 5, 3, -1]
+Execute: final_comun_mayor(camión,ración )
+ión
 Right answer: True
 ````
 ````
-Execute: acumulado([2, 3, 4, 5])
-[3, 4, 5, -1]
+Execute: final_comun_mayor(Python,PyCon )
+on
 Right answer: True
 ````
 ````
-Execute: acumulado([1, 0, -1, 8, -72])
-[8, 1, 0, -1, -1]
+Execute: final_comun_mayor(Teclado,Mezclado )
+clado
+Right answer: True
+````
+````
+Execute: final_comun_mayor(Harina,Arroz )
+
 Right answer: True
 ````
